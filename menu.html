@@ -14,39 +14,74 @@
   </head>
   <body>
     <header>
-      <p class="brand">Maison Sarah</p>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="order.html">Order</a>
-      </nav>
+      <div class="container header-bar">
+        <p class="brand">Maison Sarah</p>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="order.html">Order</a>
+        </nav>
+      </div>
     </header>
     <main>
-      <h1>Maison Sarah Menu</h1>
-      <p class="tagline">Freshly baked every morning.</p>
-      <ul>
-        <li>
-          Breads
-          <ul>
-            <li>Country sourdough <span class="price">€6</span></li>
-            <li>Baguette <span class="price">€3</span></li>
-          </ul>
-        </li>
-        <li>
-          Pastries
-          <ul>
-            <li>Butter croissant <span class="price">€3</span></li>
-            <li>Cinnamon roll <span class="price">€4</span></li>
-          </ul>
-        </li>
-        <li>
-          Cakes
-          <ul>
-            <li>Apple tart <span class="price">€5</span></li>
-            <li>Chocolate cake <span class="price">€6</span></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="container">
+        <h1>Maison Sarah Menu</h1>
+        <p class="tagline">Freshly baked every morning.</p>
+        <ul>
+          <li>
+            Breads
+            <ul>
+              <li>Country sourdough <span class="price">€6</span></li>
+              <li>Baguette <span class="price">€3</span></li>
+            </ul>
+          </li>
+          <li>
+            Pastries
+            <ul>
+              <li>Butter croissant <span class="price">€3</span></li>
+              <li>Cinnamon roll <span class="price">€4</span></li>
+            </ul>
+          </li>
+          <li>
+            Cakes
+            <ul>
+              <li>Apple tart <span class="price">€5</span></li>
+              <li>Chocolate cake <span class="price">€6</span></li>
+            </ul>
+          </li>
+        </ul>
+        <section>
+          <h2>Weekend specials</h2>
+          <div class="card-row">
+            <article class="card">
+              <img
+                src="images/croissant.jpg"
+                alt="A golden butter croissant from Maison Sarah on a wooden plate."
+              />
+              <h3>Butter croissant</h3>
+              <p class="price">€3</p>
+            </article>
+
+            <article class="card">
+              <img
+                src="images/sourdough.jpg"
+                alt="A sliced country sourdough loaf from Maison Sarah on a wooden board."
+              />
+              <h3>Country sourdough</h3>
+              <p class="price">€6</p>
+            </article>
+
+            <article class="card">
+              <img
+                src="images/apple-tart.jpg"
+                alt="A slice of apple tart from Maison Sarah with a golden pastry crust."
+              />
+              <h3>Apple tart</h3>
+              <p class="price">€5</p>
+            </article>
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
       <p>&copy; Maison Sarah</p>

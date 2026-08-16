@@ -26,7 +26,107 @@
     <main>
       <div class="container">
         <h1>Order from Maison Sarah</h1>
-        <p>Our pre-order form is coming soon.</p>
+        <form action="#" method="get">
+          <fieldset>
+            <legend>Who is picking up</legend>
+
+            <label for="customer-name">Your name</label>
+            <input
+              class="field"
+              type="text"
+              id="customer-name"
+              name="customer-name"
+              required
+              placeholder="Sarah Example"
+            />
+
+            <label for="customer-email">Your email</label>
+            <input
+              class="field"
+              type="email"
+              id="customer-email"
+              name="customer-email"
+              required
+              placeholder="sarah@example.com"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Pickup day</legend>
+
+            <div class="choice">
+              <input
+                type="radio"
+                id="day-saturday"
+                name="pickup-day"
+                value="saturday"
+                checked
+              />
+              <label for="day-saturday">Saturday</label>
+            </div>
+
+            <div class="choice">
+              <input
+                type="radio"
+                id="day-sunday"
+                name="pickup-day"
+                value="sunday"
+              />
+              <label for="day-sunday">Sunday</label>
+            </div>
+
+            <label for="pickup-time">Pickup time</label>
+            <select class="field" id="pickup-time" name="pickup-time">
+              <option value="morning">7:00 to 10:00</option>
+              <option value="midday">10:00 to 14:00</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your order</legend>
+
+            <div class="choice">
+              <input
+                type="checkbox"
+                id="product-sourdough"
+                name="product"
+                value="country-sourdough"
+              />
+              <label for="product-sourdough">Country sourdough</label>
+            </div>
+
+            <div class="choice">
+              <input
+                type="checkbox"
+                id="product-baguette"
+                name="product"
+                value="baguette"
+              />
+              <label for="product-baguette">Baguette</label>
+            </div>
+
+            <div class="choice">
+              <input
+                type="checkbox"
+                id="product-croissant"
+                name="product"
+                value="butter-croissant"
+              />
+              <label for="product-croissant">Butter croissant</label>
+            </div>
+
+            <label for="order-notes">Notes for the bakers</label>
+            <textarea
+              class="field"
+              id="order-notes"
+              name="order-notes"
+              rows="4"
+              placeholder="Tell us anything we should know."
+            ></textarea>
+
+            <button type="submit">Send pre-order</button>
+          </fieldset>
+        </form>
       </div>
     </main>
     <footer>
